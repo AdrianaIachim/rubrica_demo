@@ -114,6 +114,52 @@ function PlasmicHome__RenderFunc(props) {
                             projectcss.__wab_text,
                             sty.h1
                           )}
+                          onClick={async event => {
+                            const $steps = {};
+                            $steps["goToContatti"] = true
+                              ? (() => {
+                                  const actionArgs = {
+                                    destination: __wrapUserFunction(
+                                      {
+                                        type: "InteractionArgLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "Fb-MkiAQX",
+                                        componentUuid: "G8gULkPO5MPtQ",
+                                        argName: "destination"
+                                      },
+                                      () => `/Contatti`
+                                    )
+                                  };
+                                  return __wrapUserFunction(
+                                    {
+                                      type: "InteractionLoc",
+                                      actionName: "navigation",
+                                      interactionUuid: "Fb-MkiAQX",
+                                      componentUuid: "G8gULkPO5MPtQ"
+                                    },
+                                    () =>
+                                      (({ destination }) => {
+                                        location.assign(destination);
+                                      })?.apply(null, [actionArgs]),
+                                    actionArgs
+                                  );
+                                })()
+                              : undefined;
+                            if (
+                              typeof $steps["goToContatti"] === "object" &&
+                              typeof $steps["goToContatti"].then === "function"
+                            ) {
+                              $steps["goToContatti"] = await __wrapUserPromise(
+                                {
+                                  type: "InteractionLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "Fb-MkiAQX",
+                                  componentUuid: "G8gULkPO5MPtQ"
+                                },
+                                $steps["goToContatti"]
+                              );
+                            }
+                          }}
                         >
                           {"Rubrica Telefonica"}
                         </h1>

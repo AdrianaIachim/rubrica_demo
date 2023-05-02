@@ -498,6 +498,34 @@
           "cssFilePath": "plasmic/copy_of_demo_rubrica/PlasmicFooter.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "kWg9mjaIxWD",
+          "name": "TextInputddd",
+          "type": "managed",
+          "projectId": "gAKbcXWngnVV2asmkth1no",
+          "renderModuleFilePath": "plasmic/copy_of_demo_rubrica/PlasmicTextInputddd.jsx",
+          "importSpec": {
+            "modulePath": "TextInputddd.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_demo_rubrica/PlasmicTextInputddd.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
+        },
+        {
+          "id": "TKFVjRPWqEO",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "gAKbcXWngnVV2asmkth1no",
+          "renderModuleFilePath": "plasmic/copy_of_demo_rubrica/PlasmicButton2.jsx",
+          "importSpec": {
+            "modulePath": "Button2.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_demo_rubrica/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -565,6 +593,11 @@
           "id": "D_kXp8Zx3L_",
           "name": "AngleRightsvgIcon",
           "moduleFilePath": "plasmic/copy_of_demo_rubrica/icons/PlasmicIcon__AngleRightsvg.jsx"
+        },
+        {
+          "id": "XKSaS-SRgMn",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/copy_of_demo_rubrica/icons/PlasmicIcon__Icon4.jsx"
         }
       ],
       "images": [

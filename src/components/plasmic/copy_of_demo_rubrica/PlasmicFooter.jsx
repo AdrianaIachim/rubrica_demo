@@ -199,7 +199,18 @@ function PlasmicFooter__RenderFunc(props) {
                             const $steps = {};
                             $steps["goToLogin"] = true
                               ? (() => {
-                                  const actionArgs = {};
+                                  const actionArgs = {
+                                    destination: __wrapUserFunction(
+                                      {
+                                        type: "InteractionArgLoc",
+                                        actionName: "navigation",
+                                        interactionUuid: "uR4tru2WMKc",
+                                        componentUuid: "LXM0niw76eA",
+                                        argName: "destination"
+                                      },
+                                      () => `/privacyPolicy`
+                                    )
+                                  };
                                   return __wrapUserFunction(
                                     {
                                       type: "InteractionLoc",
@@ -346,6 +357,55 @@ function PlasmicFooter__RenderFunc(props) {
                         projectcss.__wab_text,
                         sty.text__r5VlE
                       )}
+                      onClick={async event => {
+                        const $steps = {};
+                        $steps["goToTerminiECondizioni"] = true
+                          ? (() => {
+                              const actionArgs = {
+                                destination: __wrapUserFunction(
+                                  {
+                                    type: "InteractionArgLoc",
+                                    actionName: "navigation",
+                                    interactionUuid: "V7kKQCRA8",
+                                    componentUuid: "LXM0niw76eA",
+                                    argName: "destination"
+                                  },
+                                  () => `/termini&condizioni`
+                                )
+                              };
+                              return __wrapUserFunction(
+                                {
+                                  type: "InteractionLoc",
+                                  actionName: "navigation",
+                                  interactionUuid: "V7kKQCRA8",
+                                  componentUuid: "LXM0niw76eA"
+                                },
+                                () =>
+                                  (({ destination }) => {
+                                    location.assign(destination);
+                                  })?.apply(null, [actionArgs]),
+                                actionArgs
+                              );
+                            })()
+                          : undefined;
+                        if (
+                          typeof $steps["goToTerminiECondizioni"] ===
+                            "object" &&
+                          typeof $steps["goToTerminiECondizioni"].then ===
+                            "function"
+                        ) {
+                          $steps["goToTerminiECondizioni"] =
+                            await __wrapUserPromise(
+                              {
+                                type: "InteractionLoc",
+                                actionName: "navigation",
+                                interactionUuid: "V7kKQCRA8",
+                                componentUuid: "LXM0niw76eA"
+                              },
+                              $steps["goToTerminiECondizioni"]
+                            );
+                        }
+                      }}
                     >
                       <React.Fragment>
                         <span

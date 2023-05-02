@@ -224,7 +224,14 @@ function PlasmicHeader2__RenderFunc(props) {
                       }
                     }}
                   >
-                    {"Esci"}
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FFFFFF" }}
+                      >
+                        {"Esci"}
+                      </span>
+                    </React.Fragment>
                   </div>
                   {false ? (
                     <IconIcon

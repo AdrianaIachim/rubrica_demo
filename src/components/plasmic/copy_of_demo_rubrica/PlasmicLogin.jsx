@@ -16,6 +16,9 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import TextInputddd from "../../TextInputddd"; // plasmic-import: kWg9mjaIxWD/component
+import TextInput from "../../TextInput"; // plasmic-import: QUHRrke8ROTUw/component
+import Button2 from "../../Button2"; // plasmic-import: TKFVjRPWqEO/component
 import Footer from "../../Footer"; // plasmic-import: LXM0niw76eA/component
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_copy_of_demo_rubrica.module.css"; // plasmic-import: gAKbcXWngnVV2asmkth1no/projectcss
@@ -47,6 +50,25 @@ function PlasmicLogin__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput3.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      },
+      {
+        path: "textInputddd.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -67,12 +89,10 @@ function PlasmicLogin__RenderFunc(props) {
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__yVWzT)}>
               <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text
+                  sty.text__uQ61K
                 )}
               >
                 <React.Fragment>
@@ -120,6 +140,98 @@ function PlasmicLogin__RenderFunc(props) {
                   }}
                 />
               </a>
+              <TextInputddd
+                data-plasmic-name={"textInputddd"}
+                data-plasmic-override={overrides.textInputddd}
+                className={classNames("__wab_instance", sty.textInputddd)}
+                onChange={(...eventArgs) => {
+                  p.generateStateOnChangeProp($state, [
+                    "textInputddd",
+                    "value"
+                  ])((e => e.target?.value).apply(null, eventArgs));
+                }}
+                value={p.generateStateValueProp($state, [
+                  "textInputddd",
+                  "value"
+                ])}
+              />
+
+              <TextInput
+                data-plasmic-name={"textInput3"}
+                data-plasmic-override={overrides.textInput3}
+                className={classNames("__wab_instance", sty.textInput3)}
+                onChange={(...eventArgs) => {
+                  p.generateStateOnChangeProp($state, ["textInput3", "value"])(
+                    (e => e.target?.value).apply(null, eventArgs)
+                  );
+                }}
+                value={p.generateStateValueProp($state, [
+                  "textInput3",
+                  "value"
+                ])}
+              />
+
+              <Button2
+                data-plasmic-name={"button2"}
+                data-plasmic-override={overrides.button2}
+                className={classNames("__wab_instance", sty.button2)}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["goToHome"] = true
+                    ? (() => {
+                        const actionArgs = {
+                          destination: __wrapUserFunction(
+                            {
+                              type: "InteractionArgLoc",
+                              actionName: "navigation",
+                              interactionUuid: "ZcnGWf65y",
+                              componentUuid: "ysKjwKTt5R79Qa",
+                              argName: "destination"
+                            },
+                            () => `/`
+                          )
+                        };
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "navigation",
+                            interactionUuid: "ZcnGWf65y",
+                            componentUuid: "ysKjwKTt5R79Qa"
+                          },
+                          () =>
+                            (({ destination }) => {
+                              location.assign(destination);
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["goToHome"] === "object" &&
+                    typeof $steps["goToHome"].then === "function"
+                  ) {
+                    $steps["goToHome"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "navigation",
+                        interactionUuid: "ZcnGWf65y",
+                        componentUuid: "ysKjwKTt5R79Qa"
+                      },
+                      $steps["goToHome"]
+                    );
+                  }
+                }}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__y6DZe
+                  )}
+                >
+                  {"ACCEDI"}
+                </div>
+              </Button2>
             </div>
           ) : null}
           {true ? (
@@ -140,11 +252,23 @@ function PlasmicLogin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text", "h2", "link", "img", "footer"],
-  text: ["text", "h2"],
+  root: [
+    "root",
+    "h2",
+    "link",
+    "img",
+    "textInputddd",
+    "textInput3",
+    "button2",
+    "footer"
+  ],
+
   h2: ["h2"],
   link: ["link", "img"],
   img: ["img"],
+  textInputddd: ["textInputddd"],
+  textInput3: ["textInput3"],
+  button2: ["button2"],
   footer: ["footer"]
 };
 
@@ -180,10 +304,12 @@ export const PlasmicLogin = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
     h2: makeNodeComponent("h2"),
     link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
+    textInputddd: makeNodeComponent("textInputddd"),
+    textInput3: makeNodeComponent("textInput3"),
+    button2: makeNodeComponent("button2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicLogin
     internalVariantProps: PlasmicLogin__VariantProps,

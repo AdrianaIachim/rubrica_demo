@@ -396,7 +396,18 @@ function PlasmicHeader__RenderFunc(props) {
                         const $steps = {};
                         $steps["goToContatti"] = true
                           ? (() => {
-                              const actionArgs = {};
+                              const actionArgs = {
+                                destination: __wrapUserFunction(
+                                  {
+                                    type: "InteractionArgLoc",
+                                    actionName: "navigation",
+                                    interactionUuid: "_JQoTUvQVuo3Y",
+                                    componentUuid: "8QKExZLj5WBoM",
+                                    argName: "destination"
+                                  },
+                                  () => `/Contatti`
+                                )
+                              };
                               return __wrapUserFunction(
                                 {
                                   type: "InteractionLoc",
