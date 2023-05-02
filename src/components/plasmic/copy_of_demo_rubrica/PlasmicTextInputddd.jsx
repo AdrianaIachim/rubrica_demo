@@ -111,6 +111,12 @@ function PlasmicTextInputddd__RenderFunc(props) {
         variableType: "text",
         valueProp: "value",
         onChangeProp: "onChange"
+      },
+      {
+        path: "input.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $ctx }) => $props["value"]
       }
     ],
 

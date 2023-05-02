@@ -91,39 +91,29 @@
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.textInputddd:global(.__wab_instance) {
-  max-width: 100%;
+.inpuittt:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
   margin-bottom: 37px;
+  transition-property: all, all;
+  transition-duration: 1s, 1s;
+  transition-timing-function: ease, ease-in-out;
+  transform: none;
+  display: block;
+  -webkit-transition-property: all, all;
+  -webkit-transition-timing-function: ease, ease-in-out;
+  -webkit-transition-duration: 1s, 1s;
 }
-.svg__t9Jzl {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.svg__phFfe {
-  position: relative;
-  object-fit: cover;
-  width: 1em;
-  height: 1em;
-}
-.textInput3:global(.__wab_instance) {
+.textInputddd2:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  transform: translateX(0px) translateY(0px) translateZ(0px);
-  transition-property: all;
-  transition-duration: 1s;
-  -webkit-transition-property: all;
-  -webkit-transition-duration: 1s;
 }
-.svg__hjEvj {
+.svg__bxDbE {
   position: relative;
   object-fit: cover;
   width: 1em;
   height: 1em;
 }
-.svg__wRpEp {
+.svg__czvEy {
   position: relative;
   object-fit: cover;
   width: 1em;

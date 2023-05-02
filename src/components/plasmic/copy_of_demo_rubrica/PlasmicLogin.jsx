@@ -16,8 +16,8 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import TextInputddd from "../../TextInputddd"; // plasmic-import: kWg9mjaIxWD/component
-import TextInput from "../../TextInput"; // plasmic-import: QUHRrke8ROTUw/component
+import Inpuittt from "../../Inpuittt"; // plasmic-import: bseC7_aD3S/component
+import TextInputddd2 from "../../TextInputddd2"; // plasmic-import: pCo0VYC4l3p/component
 import Button2 from "../../Button2"; // plasmic-import: TKFVjRPWqEO/component
 import Footer from "../../Footer"; // plasmic-import: LXM0niw76eA/component
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -53,13 +53,7 @@ function PlasmicLogin__RenderFunc(props) {
   const stateSpecs = React.useMemo(
     () => [
       {
-        path: "textInput3.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      },
-      {
-        path: "textInputddd.value",
+        path: "textInputddd2.value",
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => ""
@@ -140,33 +134,26 @@ function PlasmicLogin__RenderFunc(props) {
                   }}
                 />
               </a>
-              <TextInputddd
-                data-plasmic-name={"textInputddd"}
-                data-plasmic-override={overrides.textInputddd}
-                className={classNames("__wab_instance", sty.textInputddd)}
+              {true ? (
+                <Inpuittt
+                  data-plasmic-name={"inpuittt"}
+                  data-plasmic-override={overrides.inpuittt}
+                  className={classNames("__wab_instance", sty.inpuittt)}
+                />
+              ) : null}
+              <TextInputddd2
+                data-plasmic-name={"textInputddd2"}
+                data-plasmic-override={overrides.textInputddd2}
+                className={classNames("__wab_instance", sty.textInputddd2)}
+                color={"dark"}
                 onChange={(...eventArgs) => {
                   p.generateStateOnChangeProp($state, [
-                    "textInputddd",
+                    "textInputddd2",
                     "value"
                   ])((e => e.target?.value).apply(null, eventArgs));
                 }}
                 value={p.generateStateValueProp($state, [
-                  "textInputddd",
-                  "value"
-                ])}
-              />
-
-              <TextInput
-                data-plasmic-name={"textInput3"}
-                data-plasmic-override={overrides.textInput3}
-                className={classNames("__wab_instance", sty.textInput3)}
-                onChange={(...eventArgs) => {
-                  p.generateStateOnChangeProp($state, ["textInput3", "value"])(
-                    (e => e.target?.value).apply(null, eventArgs)
-                  );
-                }}
-                value={p.generateStateValueProp($state, [
-                  "textInput3",
+                  "textInputddd2",
                   "value"
                 ])}
               />
@@ -257,8 +244,8 @@ const PlasmicDescendants = {
     "h2",
     "link",
     "img",
-    "textInputddd",
-    "textInput3",
+    "inpuittt",
+    "textInputddd2",
     "button2",
     "footer"
   ],
@@ -266,8 +253,8 @@ const PlasmicDescendants = {
   h2: ["h2"],
   link: ["link", "img"],
   img: ["img"],
-  textInputddd: ["textInputddd"],
-  textInput3: ["textInput3"],
+  inpuittt: ["inpuittt"],
+  textInputddd2: ["textInputddd2"],
   button2: ["button2"],
   footer: ["footer"]
 };
@@ -307,8 +294,8 @@ export const PlasmicLogin = Object.assign(
     h2: makeNodeComponent("h2"),
     link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
-    textInputddd: makeNodeComponent("textInputddd"),
-    textInput3: makeNodeComponent("textInput3"),
+    inpuittt: makeNodeComponent("inpuittt"),
+    textInputddd2: makeNodeComponent("textInputddd2"),
     button2: makeNodeComponent("button2"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicLogin

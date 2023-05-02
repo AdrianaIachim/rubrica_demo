@@ -382,20 +382,6 @@
           "componentType": "component"
         },
         {
-          "id": "QUHRrke8ROTUw",
-          "name": "TextInput",
-          "type": "managed",
-          "projectId": "gAKbcXWngnVV2asmkth1no",
-          "renderModuleFilePath": "plasmic/copy_of_demo_rubrica/PlasmicTextInput.jsx",
-          "importSpec": {
-            "modulePath": "TextInput.jsx"
-          },
-          "cssFilePath": "plasmic/copy_of_demo_rubrica/PlasmicTextInput.module.css",
-          "scheme": "blackbox",
-          "componentType": "component",
-          "plumeType": "text-input"
-        },
-        {
           "id": "ysKjwKTt5R79Qa",
           "name": "Login",
           "type": "managed",
@@ -526,6 +512,33 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "bseC7_aD3S",
+          "name": "Inpuittt",
+          "type": "managed",
+          "projectId": "gAKbcXWngnVV2asmkth1no",
+          "renderModuleFilePath": "plasmic/copy_of_demo_rubrica/PlasmicInpuittt.jsx",
+          "importSpec": {
+            "modulePath": "Inpuittt.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_demo_rubrica/PlasmicInpuittt.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "pCo0VYC4l3p",
+          "name": "TextInputddd2",
+          "type": "managed",
+          "projectId": "gAKbcXWngnVV2asmkth1no",
+          "renderModuleFilePath": "plasmic/copy_of_demo_rubrica/PlasmicTextInputddd2.jsx",
+          "importSpec": {
+            "modulePath": "TextInputddd2.jsx"
+          },
+          "cssFilePath": "plasmic/copy_of_demo_rubrica/PlasmicTextInputddd2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "text-input"
         }
       ],
       "icons": [
@@ -734,6 +747,25 @@
           "id": "O0cN7mIJhX5qtk",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "szjgMQpPpxhmkjnaBvZQJG",
+      "projectApiToken": "xBIsrWHdWZ9kVgFEGUt29LOZPWfm0XidYqRHqPhQXsEjDHevjIbp44nEYMIZ46YOoxrN8anfXjreTkDtFjTA",
+      "projectName": "react-parallax-tilt",
+      "version": "2.13.0",
+      "cssFilePath": "plasmic/react_parallax_tilt/plasmic_react_parallax_tilt.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "PfY466VIuq",
+          "name": "Tilt",
+          "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
       ]
     }
