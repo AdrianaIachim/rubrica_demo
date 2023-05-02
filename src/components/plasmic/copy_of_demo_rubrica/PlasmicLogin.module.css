@@ -45,7 +45,7 @@
   border-radius: 35px;
   padding: 8px 8px 188px;
 }
-.text__uQ61K {
+.text {
   position: relative;
   width: 100%;
   height: auto;
@@ -90,89 +90,6 @@
 }
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
-}
-.form:global(.__wab_instance) {
-  display: grid;
-  grid-row-gap: 10px;
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  align-self: center;
-  grid-template-columns:
-    1fr minmax(0, var(--plsmc-wide-chunk)) var(--plsmc-viewport-gap)
-    min(
-      var(--plsmc-standard-width),
-      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
-    )
-    var(--plsmc-viewport-gap) minmax(0, var(--plsmc-wide-chunk)) 1fr;
-}
-:where(.form > *) {
-  grid-column: 4;
-}
-.formItem__v7Qlh:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.text__a2Xjc {
-  position: relative;
-  width: 567px;
-  height: auto;
-  max-width: 100%;
-  color: var(--token-bGOUZsiulc41PA);
-  padding-top: 41px;
-  font-size: 18px;
-  margin-top: -43px;
-}
-.text__kjgKg {
-  position: relative;
-}
-.input:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.formItem__dTYfp:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.text___6QcQu {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  font-size: 18px;
-  color: #ffffff;
-  min-width: 0;
-}
-.input2:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.button:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  background: linear-gradient(
-      var(--token-G8npK1tqD5l5vt),
-      var(--token-G8npK1tqD5l5vt)
-    ),
-    var(--token-u-AQQRmqnhlH);
-  font-weight: 600;
-  color: var(--token-8rJLE1sVxnkwKC);
-  margin-right: 0px;
-  width: 761px;
-  align-self: auto;
-  text-align: center;
-  left: auto;
-  top: auto;
-  z-index: 1;
-  position: relative;
-  display: block;
-}
-.text__ch36E {
-  position: relative;
-  width: 759px;
-  height: auto;
-  max-width: 100%;
-  padding-top: -12px;
 }
 .freeBox__aO228 {
   display: flex;

@@ -16,14 +16,8 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
-import { FormWrapper } from "@plasmicpkgs/antd5/skinny/registerForm"; // plasmic-import: TgJFzUZpvQ/codeComponent
-import { FormItemWrapper } from "@plasmicpkgs/antd5/skinny/registerForm"; // plasmic-import: EYHwZh9ILg/codeComponent
-import { AntdInput } from "@plasmicpkgs/antd5/skinny/registerInput"; // plasmic-import: Vf5hntD2SZ5/codeComponent
-import { inputHelpers as AntdInput_Helpers } from "@plasmicpkgs/antd5/skinny/registerInput"; // plasmic-import: Vf5hntD2SZ5/codeComponentHelper
-import { AntdButton } from "@plasmicpkgs/antd5/skinny/registerButton"; // plasmic-import: bx9Xzvf5_eu/codeComponent
 import Footer from "../../Footer"; // plasmic-import: LXM0niw76eA/component
 import "@plasmicapp/react-web/lib/plasmic.css";
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_copy_of_demo_rubrica.module.css"; // plasmic-import: gAKbcXWngnVV2asmkth1no/projectcss
 import sty from "./PlasmicLogin.module.css"; // plasmic-import: ysKjwKTt5R79Qa/css
 import animalpngMxQlfAubQ5KjX8 from "./images/animalpng.png"; // plasmic-import: MxQLFAubQ5kjX8/picture
@@ -53,31 +47,6 @@ function PlasmicLogin__RenderFunc(props) {
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "form.value",
-        type: "private",
-        variableType: "object",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "input.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      },
-      {
-        path: "input2.value",
-        type: "private",
-        variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => undefined
-      }
-    ],
-
-    [$props, $ctx]
-  );
-  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
   return (
     <React.Fragment>
       <div className={projectcss.plasmic_page_wrapper}>
@@ -92,17 +61,18 @@ function PlasmicLogin__RenderFunc(props) {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__yVWzT)}>
               <div
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text__uQ61K
+                  sty.text
                 )}
               >
                 <React.Fragment>
@@ -150,203 +120,6 @@ function PlasmicLogin__RenderFunc(props) {
                   }}
                 />
               </a>
-              <FormWrapper
-                data-plasmic-name={"form"}
-                data-plasmic-override={overrides.form}
-                className={classNames("__wab_instance", sty.form)}
-                extendedOnValuesChange={p.generateStateOnChangeProp($state, [
-                  "form",
-                  "value"
-                ])}
-                labelCol={{ span: 8, horizontalOnly: true }}
-                layout={"vertical"}
-                wrapperCol={{ span: 16, horizontalOnly: true }}
-              >
-                <FormItemWrapper
-                  className={classNames("__wab_instance", sty.formItem__v7Qlh)}
-                  label={
-                    <React.Fragment>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__a2Xjc
-                        )}
-                      >
-                        {"\n Inserisci la mail o il numero di cellulare:"}
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__kjgKg
-                        )}
-                      >
-                        {":"}
-                      </div>
-                    </React.Fragment>
-                  }
-                  name={"name"}
-                >
-                  {(() => {
-                    const child$Props = {
-                      className: classNames("__wab_instance", sty.input),
-                      onChange: p.generateStateOnChangePropForCodeComponents(
-                        $state,
-                        "value",
-                        ["input", "value"],
-                        AntdInput_Helpers
-                      ),
-                      value: p.generateStateValueProp($state, [
-                        "input",
-                        "value"
-                      ])
-                    };
-                    p.initializeCodeComponentStates(
-                      $state,
-                      [
-                        {
-                          name: "value",
-                          plasmicStateName: "input.value"
-                        }
-                      ],
-
-                      [],
-                      AntdInput_Helpers ?? {},
-                      child$Props
-                    );
-                    return (
-                      <AntdInput
-                        data-plasmic-name={"input"}
-                        data-plasmic-override={overrides.input}
-                        {...child$Props}
-                      />
-                    );
-                  })()}
-                </FormItemWrapper>
-                <FormItemWrapper
-                  className={classNames("__wab_instance", sty.formItem__dTYfp)}
-                  label={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___6QcQu
-                      )}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ color: "#FFFFFF" }}
-                        >
-                          {"Inserisci la password:"}
-                        </span>
-                      </React.Fragment>
-                    </div>
-                  }
-                  name={"name"}
-                >
-                  {(() => {
-                    const child$Props = {
-                      className: classNames("__wab_instance", sty.input2),
-                      onChange: p.generateStateOnChangePropForCodeComponents(
-                        $state,
-                        "value",
-                        ["input2", "value"],
-                        AntdInput_Helpers
-                      ),
-                      value: p.generateStateValueProp($state, [
-                        "input2",
-                        "value"
-                      ])
-                    };
-                    p.initializeCodeComponentStates(
-                      $state,
-                      [
-                        {
-                          name: "value",
-                          plasmicStateName: "input2.value"
-                        }
-                      ],
-
-                      [],
-                      AntdInput_Helpers ?? {},
-                      child$Props
-                    );
-                    return (
-                      <AntdInput
-                        data-plasmic-name={"input2"}
-                        data-plasmic-override={overrides.input2}
-                        {...child$Props}
-                      />
-                    );
-                  })()}
-                </FormItemWrapper>
-                <AntdButton
-                  data-plasmic-name={"button"}
-                  data-plasmic-override={overrides.button}
-                  className={classNames("__wab_instance", sty.button)}
-                  submitsForm={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ch36E
-                    )}
-                    onClick={async event => {
-                      const $steps = {};
-                      $steps["goToHome"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              destination: __wrapUserFunction(
-                                {
-                                  type: "InteractionArgLoc",
-                                  actionName: "navigation",
-                                  interactionUuid: "ThkikUJ-9",
-                                  componentUuid: "ysKjwKTt5R79Qa",
-                                  argName: "destination"
-                                },
-                                () => `/`
-                              )
-                            };
-                            return __wrapUserFunction(
-                              {
-                                type: "InteractionLoc",
-                                actionName: "navigation",
-                                interactionUuid: "ThkikUJ-9",
-                                componentUuid: "ysKjwKTt5R79Qa"
-                              },
-                              () =>
-                                (({ destination }) => {
-                                  location.assign(destination);
-                                })?.apply(null, [actionArgs]),
-                              actionArgs
-                            );
-                          })()
-                        : undefined;
-                      if (
-                        typeof $steps["goToHome"] === "object" &&
-                        typeof $steps["goToHome"].then === "function"
-                      ) {
-                        $steps["goToHome"] = await __wrapUserPromise(
-                          {
-                            type: "InteractionLoc",
-                            actionName: "navigation",
-                            interactionUuid: "ThkikUJ-9",
-                            componentUuid: "ysKjwKTt5R79Qa"
-                          },
-                          $steps["goToHome"]
-                        );
-                      }
-                    }}
-                  >
-                    {"ACCEDI"}
-                  </div>
-                </AntdButton>
-              </FormWrapper>
             </div>
           ) : null}
           {true ? (
@@ -367,25 +140,11 @@ function PlasmicLogin__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "h2",
-    "link",
-    "img",
-    "form",
-    "input",
-    "input2",
-    "button",
-    "footer"
-  ],
-
+  root: ["root", "text", "h2", "link", "img", "footer"],
+  text: ["text", "h2"],
   h2: ["h2"],
   link: ["link", "img"],
   img: ["img"],
-  form: ["form", "input", "input2", "button"],
-  input: ["input"],
-  input2: ["input2"],
-  button: ["button"],
   footer: ["footer"]
 };
 
@@ -421,13 +180,10 @@ export const PlasmicLogin = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    text: makeNodeComponent("text"),
     h2: makeNodeComponent("h2"),
     link: makeNodeComponent("link"),
     img: makeNodeComponent("img"),
-    form: makeNodeComponent("form"),
-    input: makeNodeComponent("input"),
-    input2: makeNodeComponent("input2"),
-    button: makeNodeComponent("button"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicLogin
     internalVariantProps: PlasmicLogin__VariantProps,

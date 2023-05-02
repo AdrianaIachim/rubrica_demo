@@ -19,7 +19,6 @@ import {
 import Header from "../../Header"; // plasmic-import: 8QKExZLj5WBoM/component
 import Footer from "../../Footer"; // plasmic-import: LXM0niw76eA/component
 import "@plasmicapp/react-web/lib/plasmic.css";
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic_copy_of_demo_rubrica.module.css"; // plasmic-import: gAKbcXWngnVV2asmkth1no/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: G8gULkPO5MPtQ/css
 
@@ -65,7 +64,6 @@ function PlasmicHome__RenderFunc(props) {
               projectcss.plasmic_default_styles,
               projectcss.plasmic_mixins,
               projectcss.plasmic_tokens,
-              plasmic_antd_5_hostless_css.plasmic_tokens,
               sty.defaultSite
             )}
           >
