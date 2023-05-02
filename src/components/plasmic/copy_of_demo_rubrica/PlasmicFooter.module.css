@@ -321,7 +321,7 @@
 .text__jkC5 {
   color: var(--token-8rJLE1sVxnkwKC);
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 16px;
 }
 .svg__sh8Pt {
   width: 24px;
@@ -468,7 +468,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
-  font-size: 24px;
+  font-size: 16px;
   color: var(--token-8rJLE1sVxnkwKC);
   min-width: 0;
 }
