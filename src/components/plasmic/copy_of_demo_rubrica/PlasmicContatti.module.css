@@ -56,6 +56,8 @@
 }
 .rigaContatti__wIUmp:global(.__wab_instance) {
   position: relative;
+  height: 103px;
+  flex-shrink: 0;
 }
 .freeBox___8GIet {
   display: flex;

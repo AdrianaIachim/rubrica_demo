@@ -129,7 +129,7 @@ function PlasmicRigaContatti__RenderFunc(props) {
                 className={"plasmic_default__all plasmic_default__span"}
                 style={{ color: "#000000" }}
               >
-                {"Eventuale sito"}
+                {"sito"}
               </span>
             </React.Fragment>
           </a>
